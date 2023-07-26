@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarketDemo.Paginas.ListaClientes">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Grid>
+                <Frame AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,.95,1,0.62" BackgroundColor="#E5E8E8" >
+                    <Grid AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,1,1,0.62" >
+                        <Frame Grid.Column="0" Grid.Row="0" Padding="0"  CornerRadius="45">
+                            <Button   Text="Insertar, Actualizar o Eliminar"  Clicked="Btn_Insert" BackgroundColor="DarkSeaGreen" TextColor="black"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </Grid>
+
+            <Label Text="Informacion de los clientes"></Label>
+            <ScrollView>
+                <Grid x:Name="TablaGrid" Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

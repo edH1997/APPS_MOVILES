@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarketDemo.Paginas.Client_Insert_Update">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" AbsoluteLayout.LayoutFlags="All">
+            <Frame BackgroundColor="#2196F3" Padding="4" CornerRadius="0">
+                <Label Text="API CLIENTES" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+            <Grid>
+                <Frame AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,.95,1,0.62" BackgroundColor="#E5E8E8" >
+                    <Grid AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,1,1,0.62" >
+                        <Frame Grid.Column="0" Grid.Row="0" Padding="0"  CornerRadius="45">
+                            <Button   Text="Ingresar o Actualizar"  Clicked="Btn_Update" BackgroundColor="Wheat" TextColor="black"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </Grid>
+            <Label x:Name="lblDatos" IsVisible="false" Text="Message:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="Aqua"></Label>
+            <Label Text="CEDULA:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="#ABEBC6" ></Label>
+            <Entry x:Name="cedula" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="#D5F5E3"></Entry>
+            <Label Text="NOMBRE:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="#ABEBC6"  ></Label>
+            <Entry x:Name="nombre" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="#D5F5E3"></Entry>
+            <Label Text="TOTAL A PAGAR:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="#ABEBC6"></Label>
+            <Entry x:Name="totalPa"  TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="#D5F5E3" ></Entry>
+            <Label Text="SALDO:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="#ABEBC6"></Label>
+            <Entry x:Name="saldo" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="#D5F5E3" ></Entry>
+            <Label  Text="DEBE:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="#ABEBC6"></Label>
+            <Entry x:Name="debe" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="#D5F5E3" ></Entry>
+            <Frame Grid.Column="1" Grid.Row="1" Padding="0"  CornerRadius="45" HorizontalOptions="End">
+                <Button   Text="Eliminar"  Clicked="Btn_Delete" BackgroundColor="Red" TextColor="black"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

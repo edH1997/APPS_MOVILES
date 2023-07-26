@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarketDemo.MainPage">
+
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="fondo.jpg" Aspect="AspectFill" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Source="log.png" Grid.Row="0" WidthRequest="200" HeightRequest="200" Margin="0,150,0,30"/>
+                <Label Text="MiniMarketDemo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                <StackLayout Grid.Row="1"  Padding="20,-11">
+                    
+                    <Entry Placeholder="Usuario" x:Name="UsernameEntry" 
+                   PlaceholderColor="Gray" 
+                   BackgroundColor="LightGray" 
+                   TextColor="Black" 
+                   FontSize="16" 
+                   Margin="20,10,20,0"
+                   HeightRequest="40" />
+
+            <Entry Placeholder="Contraseña" x:Name="PasswordEntry" IsPassword="True"
+                   PlaceholderColor="Gray" 
+                   BackgroundColor="LightGray" 
+                   TextColor="Black" 
+                   FontSize="16" 
+                   Margin="20,0,20,10"
+                   HeightRequest="40" />
+
+            <Button Text="Iniciar sesión" Clicked="OnLoginButtonClicked" 
+                    BackgroundColor="DodgerBlue" 
+                    TextColor="White"
+                    CornerRadius="5"
+                    FontSize="18"
+                    HeightRequest="50"
+                    Margin="20,0,20,0" />
+            <Button Text="Registrarse" Clicked="OnLogin" 
+                    BackgroundColor="DarkOliveGreen" 
+                    TextColor="White"
+                    CornerRadius="5"
+                    FontSize="18"
+                    HeightRequest="50"
+                    Margin="70,0,70,0" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+
+</ContentPage>

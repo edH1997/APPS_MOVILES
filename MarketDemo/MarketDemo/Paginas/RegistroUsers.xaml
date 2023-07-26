@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarketDemo.Paginas.RegistroUsers">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#219" Padding="4" CornerRadius="0">
+                <Label Text="REGISTRO" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+            <Grid>
+                <Frame AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,.95,1,0.62" BackgroundColor="#E5E8E8" >
+                    <Grid AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,1,1,0.62" >
+                        <Frame Grid.Column="1" Grid.Row="0" Padding="0"  CornerRadius="45">
+                            <Button   Text="REGISTRAR"  Clicked="Btn_Update" BackgroundColor="DarkSeaGreen" TextColor="black"/>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </Grid>
+            <Label x:Name="lblDatos" IsVisible="false" Text="Message:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="Aqua"></Label>
+            <Label Text="ACTIVO:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue" ></Label>
+            <Entry x:Name="activo" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightBlue"></Entry>
+            <Label Text="CODIGO:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue"  ></Label>
+            <Entry x:Name="codigo" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightBlue"></Entry>
+            <Label Text="APELLIDOS:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue"></Label>
+            <Entry x:Name="apellidos"  TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightBlue" ></Entry>
+            <Label Text="NOMBRES:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue"></Label>
+            <Entry x:Name="nombres" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightBlue" ></Entry>
+            <Label  Text="CORREO:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue"></Label>
+            <Entry x:Name="correo" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightBlue" ></Entry>
+            <Label  Text="CLAVE:" TextColor="Black" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue"></Label>
+            <Entry x:Name="clave" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="LightBlue" ></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

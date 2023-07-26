@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarketDemo.Paginas.Lista_libros">
+   <StackLayout>
+
+        <Frame AbsoluteLayout.LayoutFlags="SizeProportional,YProportional" AbsoluteLayout.LayoutBounds="0,.95,1,0.62" BackgroundColor="#E5E8E8" >
+  
+                <Frame Grid.Column="0" Grid.Row="0" Padding="0"  CornerRadius="45">
+                    <Button   Text="Ver Clientes -->"  Clicked="Btn_irClient" BackgroundColor="AliceBlue" TextColor="black"/>
+                </Frame>
+
+        </Frame>
+        <Button Text="Ingresar Nuevo Libro" Clicked="OnButtonClicked" ></Button >
+        
+        <Label Text="Informacion de los libros"></Label>
+        
+
+        <ScrollView>
+            <Grid x:Name="TablaGrid" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </ScrollView>
+
+
+    </StackLayout>
+</ContentPage>

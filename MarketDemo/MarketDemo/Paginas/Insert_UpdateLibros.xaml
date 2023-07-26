@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarketDemo.Paginas.Insert_UpdateLibros">
+    <ContentPage.Content>
+
+        <StackLayout Padding="20">
+
+            <!--  <Button Text="Seleccionar imagen" Clicked="OnSeleccionarImagenButtonClicked" /> -->
+            <!-- <Image x:Name="imagenSeleccionada" Aspect="AspectFit" HeightRequest="200" />  -->
+
+
+            <Entry Placeholder="Nombre" x:Name="nombreEntry" />
+            <Entry Placeholder="Año de publicacion" x:Name="autorEntry" />
+            <Entry Placeholder="Autor" x:Name="anioEntry" />
+            <Entry Placeholder="URL de la imagen" x:Name="urlimgEntry" />
+
+            <Label x:Name="lblDatos"></Label>
+
+            <!-- Botón para agregar el libro -->
+            <Button Text="Agregar Libro" Clicked="OnAgregarLibroClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
